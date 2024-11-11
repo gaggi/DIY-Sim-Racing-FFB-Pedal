@@ -250,7 +250,11 @@ char* APhost;
   #include "soc/soc_caps.h"
   #include <Adafruit_NeoPixel.h>
   #define LEDS_COUNT 1
-  Adafruit_NeoPixel pixels(LEDS_COUNT, LED_GPIO, NEO_GRB + NEO_KHZ800);
+  #if PCB_VERSION == 9
+    Adafruit_NeoPixel pixels(LEDS_COUNT, LED_GPIO, NEO_RGB + NEO_KHZ800);
+  #else
+    Adafruit_NeoPixel pixels(LEDS_COUNT, LED_GPIO, NEO_GRB + NEO_KHZ800);
+  #endif
   #define CHANNEL 0
   #define LED_BRIGHT 30
   /*
@@ -319,7 +323,7 @@ void setup()
   #ifdef USING_LED
     pixels.begin();
     pixels.setBrightness(20);
-    pixels.setPixelColor(0,0xff,0x00,0x00);
+    pixels.setPixelColor(0,0xff,0x00,0x00); //red
     pixels.show(); 
   #endif
 // initialize configuration and update local variables

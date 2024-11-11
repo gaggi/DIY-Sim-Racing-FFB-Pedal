@@ -405,32 +405,35 @@ static const uint32_t STEPS_PER_MOTOR_REVOLUTION = 6400;
   //analog output pin
   //#define D_O 25   
   //MCP4725 SDA SCL
-  #define MCP_SDA 48
-  #define MCP_SCL 47
+  #define MCP_SDA 5
+  #define MCP_SCL 4
   
   // endstop pins
   #define minPin 12
   #define maxPin 13
-
   // Pedal assignment pin
   #define PEDAL_ASSIGNMENT
   #define CFG1 1
   #define CFG2 2
 
+  #define EMERGENCY_BUTTON
+  #define ShutdownPin 6
   // level shifter is present on this PCB design
   #define SENSORLESS_HOMING true
   #define ISV57_TXPIN 10//27 //17
   #define ISV57_RXPIN 9//26 // 16
 
-  #define Using_analog_output_ESP32_S3
-
-  //#define BLUETOOTH_GAMEPAD
-  #define USB_JOYSTICK
+  //#define Using_analog_output_ESP32_S3
   #define ESPNOW_Enable
   #define ESPNow_S3
+  //#define BLUETOOTH_GAMEPAD
+  #define USB_JOYSTICK
+
   #define SERIAL_COOMUNICATION_TASK_DELAY_IN_MS 5
   #define ESPNow_Pairing_function
-  #define Pairing_GPIO 0
+  #define Hardware_Pairing_button
+  #define Pairing_GPIO 33
+  //#define ESPNow_debug_rudder
   #define CONTROLLER_SPECIFIC_VIDPID
   #define USING_LED
   #define LED_GPIO 38
