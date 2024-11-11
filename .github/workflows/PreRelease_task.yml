@@ -107,7 +107,8 @@ jobs:
     # copy files to dir
       - name: List files in dir
         run: | 
-          dir ${{ github.workspace }}/Helper/bins/esp32
+          dir ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-waveshare
+          dir ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare
     
     
     
