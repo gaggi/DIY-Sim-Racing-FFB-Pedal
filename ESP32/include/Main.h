@@ -388,3 +388,51 @@ static const uint32_t STEPS_PER_MOTOR_REVOLUTION = 6400;
   #define LED_GPIO 12
   #define OTA_update
 #endif
+
+#if PCB_VERSION == 9
+  // ADC defines
+  #define PIN_DRDY 15//19// 19 --> DRDY
+  #define PIN_RST  6 // X --> X
+  #define PIN_SCK 16//16 // 16 -->SCLK
+  #define PIN_MISO 18 // 18 --> DOUT
+  #define PIN_MOSI 17 // 17 --> DIN
+  #define PIN_CS 7//21 // 21 --> CS
+
+  // stepper pins
+  #define dirPinStepper    37//22
+  #define stepPinStepper   36//23
+
+  //analog output pin
+  //#define D_O 25   
+  //MCP4725 SDA SCL
+  #define MCP_SDA 48
+  #define MCP_SCL 47
+  
+  // endstop pins
+  #define minPin 12
+  #define maxPin 13
+
+  // Pedal assignment pin
+  #define PEDAL_ASSIGNMENT
+  #define CFG1 1
+  #define CFG2 2
+
+  // level shifter is present on this PCB design
+  #define SENSORLESS_HOMING true
+  #define ISV57_TXPIN 10//27 //17
+  #define ISV57_RXPIN 9//26 // 16
+
+  #define Using_analog_output_ESP32_S3
+
+  //#define BLUETOOTH_GAMEPAD
+  #define USB_JOYSTICK
+  #define ESPNOW_Enable
+  #define ESPNow_S3
+  #define SERIAL_COOMUNICATION_TASK_DELAY_IN_MS 5
+  #define ESPNow_Pairing_function
+  #define Pairing_GPIO 0
+  #define CONTROLLER_SPECIFIC_VIDPID
+  #define USING_LED
+  #define LED_GPIO 38
+  #define OTA_update
+#endif
