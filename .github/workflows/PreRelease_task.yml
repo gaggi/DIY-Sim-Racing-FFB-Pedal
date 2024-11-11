@@ -96,9 +96,9 @@ jobs:
           copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/firmware.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-gilphilbert
           copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/bootloader.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-gilphilbert
           copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/partitions.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-gilphilbert   
-          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/firmware.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare
-          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/bootloader.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare
-          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-gilphilbert/partitions.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare       
+          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-waveshare/firmware.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare
+          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-waveshare/bootloader.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare
+          copy ${{ github.workspace }}/ESP32/.pio/build/esp32s3usbotg-waveshare/partitions.bin  ${{ github.workspace }}/Helper/bins/esp32s3_esp32s3usbotg-waveshare       
     
     
     
